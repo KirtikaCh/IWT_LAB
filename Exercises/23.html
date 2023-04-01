@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+background-color: rgb(234, 196, 156);
+        }
+
+        .card {
+            position: relative;
+            width: 30%;
+            border: 2px solid black;
+            box-shadow: 15px 20px 17px rgb(248, 116, 138);
+            height:650px;
+background-color: rgb(245, 242, 166);
+        }
+
+        .card>img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .desc {
+            padding: 20px;
+            background-color: rgb(207, 166, 245);
+background-color: rgb(245, 242, 166);
+        }
+
+        h2 {
+            text-align: center;
+            color: rgba(3, 16, 94, 0.459);
+background-color: rgb(245, 242, 166);
+        }
+
+        p {
+            text-align: justify;
+            color: rgba(252, 0, 0, 0.459);
+background-color: rgb(245, 242, 166);
+        }
+
+        .date {
+            width: 40%;
+            color: rgb(56, 49, 88);
+            font-size: 25px;
+            background-color: rgba(199, 106, 170, 0.459);
+            position: absolute;
+            top: 88%;
+            left: 60%;
+            transform: rotate(-25deg);
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display:flex;justify-content: center;">;
+        <script>
+
+            images = ["10.jpeg", "11.jpeg", "16.jpeg"];
+            date = ["04-07-2002", "14-06-2012", "12-04-2001"];
+            desc = ["description1", "description2", "description3"];
+            titles = ["Title 1", " Title 2", "Title 3"];
+            for (i = 0; i < 3; i++) {
+                var card = '<div class="card">'
+                    + '<img src="images/'+images[i] + '"/>'
+                    + '<div class=date>' + date[i] + '</div>'
+                    + '<div class="desc">'
+                    + '<h2 align="center">' +titles[i] + '</h2>'
+                    + '<p>' + desc[i] + '</p>'
+                    + '</div></div>'
+                document.write(card);
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>

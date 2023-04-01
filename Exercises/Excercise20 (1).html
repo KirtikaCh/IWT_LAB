@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week3_Excercise20</title>
+        <!-- <link href="ex20.css" type="text/css" rel="stylesheet" /> -->
+<style>
+.container{
+    background-color:rgb(88, 135, 135);
+    display:flex; 
+    flex-direction:column;
+    width:100%;
+    height:100%;
+    justify-content:space-around; /*for horizontal alignment*/
+    align-items:center; /*for vertical alignment*/
+	position:relative;
+}
+.container > nav{
+	background-image:url("images/bgs/pool_table.png");
+    width:100%;
+    height:5%;
+background-color: rgb(121, 115, 84);
+}
+.container > nav > ul{
+	display:flex;
+	flex-direction:row;
+    justify-content:center;
+    align-items:center;
+	font-size:17px;
+	list-style-type:none;
+}
+.container > nav > ul > a{
+	text-decoration:none;
+    display:block;
+}
+.container > nav > ul > a > li:hover{
+    transform:scale(1.1);
+    transition:1s;
+}
+.container > nav > ul > a > li > span:hover{
+    color:rgb(12, 37, 74);
+}
+ span{
+	color:white;
+	margin:15px;
+}
+.container > .c1{
+    background-image:url("images/bgs/wood_pattern_trans.png");
+    width:100%;
+    height:55%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+/* background-color: rgb(192, 241, 225); */
+}
+.container > .c2{
+	background-image:url("images/bgs/plaid.png");
+    width:100%;
+    height:55%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container > .c3{
+    background-image:url("images/bgs/green_dust_scratch.png");
+    width:100%;
+    height:55%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container > .c4{
+    background-image:url("images/bgs/pineapplecut.png");
+    width:100%;
+    height:55%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container > .c5{
+    background-image:url("images/bgs/wood_pattern.png");
+    width:100%;
+    height:55%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container > .c6{
+    background-image:url("images/bgs/washi.png");
+    width:100%;
+    height:55%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container > .c7{
+    background-image:url("images/bgs/pool_table.png");
+    width:100%;
+    height:5%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+	color:white;
+	font-size:20px;
+}
+.container > .c8{
+    background-image:url("images/bgs/cubes.png");
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container > .c1 > div {
+    background-color:white;
+	display:flex; 
+    flex-direction:column;
+    width:80%;
+    height:80%;
+    margin:10px;
+    font-size:20px;
+	text-align:justify;
+	font-family:'monospace';
+	line-height:1.5;
+	padding:20px;
+    border-radius:5%;
+background-color: rgb(192, 241, 225);
+box-shadow: 15px 15px 15px rgb(36, 74, 62);
+border-style: groove;
+border-width: 10px;
+border-color: rgb(121, 98, 69);
+}
+.container > .c2 > div {
+	background-color:white;
+	display:flex; 
+    flex-direction:column;
+    width:80%;
+    height:80%;
+    margin:10px;
+    font-size:20px;
+	text-align:justify;
+	font-family:'monospace';
+	line-height:1.5;
+	padding:20px;
+    border-radius:5%;
+background-color: rgb(192, 241, 225);
+box-shadow: 15px 15px 15px rgb(36, 74, 62);
+border-style: groove;
+border-width: 10px;
+border-color: rgb(121, 98, 69);
+}
+.container > .c3 > div {
+	background-color:white;
+	display:flex; 
+    flex-direction:column;
+    width:80%;
+    height:90%;
+    margin:10px;
+    font-size:20px;
+	text-align:justify;
+	font-family:'monospace';
+	line-height:1.5;
+	padding:20px;
+    border-radius:5%;
+background-color: rgb(192, 241, 225);
+box-shadow: 15px 15px 15px rgb(36, 74, 62);
+border-style: groove;
+border-width: 10px;
+border-color: rgb(121, 98, 69);
+}
+.container > .c4 > div {
+	background-color:white;
+	display:flex; 
+    flex-direction:column;
+    width:80%;
+    height:90%;
+    margin:10px;
+    font-size:20px;
+	text-align:justify;
+	font-family:'monospace';
+	line-height:1.5;
+	padding:20px;
+    border-radius:5%;
+background-color: rgb(192, 241, 225);
+box-shadow: 15px 15px 15px rgb(36, 74, 62);
+border-style: groove;
+border-width: 10px;
+border-color: rgb(121, 98, 69);
+}
+.container > .c5 > div {
+	background-color:white;
+	display:flex; 
+    flex-direction:column;
+    width:80%;
+    height:90%;
+    margin:10px;
+    font-size:20px;
+	text-align:justify;
+	font-family:'monospace';
+	line-height:1.5;
+	padding:20px;
+    border-radius:5%;
+background-color: rgb(192, 241, 225);
+box-shadow: 15px 15px 15px rgb(36, 74, 62);
+border-style: groove;
+border-width: 10px;
+border-color: rgb(121, 98, 69);
+}
+.container > .c6 > div {
+	background-color:white;
+	display:flex; 
+    flex-direction:column;
+    width:80%;
+    height:70%;
+    margin:10px;
+    font-size:20px;
+	text-align:justify;
+	font-family:'monospace';
+	line-height:1.5;
+	padding:20px;
+    border-radius:5%;
+background-color: rgb(192, 241, 225);
+box-shadow: 15px 15px 15px rgb(36, 74, 62);
+border-style: groove;
+border-width: 10px;
+border-color: rgb(121, 98, 69);
+}
+.container > .c8 > div {
+	background-color:white;
+	display:flex; 
+    flex-direction:column;
+    width:80%;
+    height:90%;
+    margin:10px;
+    font-size:20px;
+	text-align:justify;
+	font-family:'monospace';
+	line-height:1.5;
+	padding:20px;
+    border-radius:5%;
+background-color: rgb(192, 241, 225);
+box-shadow: 15px 15px 15px rgb(36, 74, 62);
+border-style: groove;
+border-width: 10px;
+border-color: rgb(121, 98, 69);
+}
+</style>
+    </head>
+    <body>
+        <div class="container">
+			<nav>
+				<ul>
+					<a href="#Obj"><li><span>OBJECTIVE</span></li></a>
+					<a href="#Pd"><li><span>PERSONAL DETAILS</span></li></a>
+					<a href="#Eq"><li><span>EDUCATIONAL QUALIFICATION</span></li></a>
+					<!-- <a href="#c"><li><span>CERTIFICATION</span></li></a> -->
+					<a href="#cp"><li><span>TECHNICAL SKILLS</span></li></a>
+					<a href="#Ec"><li><span>EXTRA CURRICULAR ACTIVITIES</span></li></a>
+					<a href="#d"><li><span>DECLARATION</span></li></a>
+				</ul>
+			</nav>
+			<div class="c1">
+				<div>
+				<a name="Obj">
+					<p> 
+						<h1 align=center>KIRTIKA CHAUDHARY</h1>
+						<h3 align=center>B.Tech 3rd Year Undergraduate</h3><br>
+						I am a fresher in the corporate culture, but ready to accept the challenges utilizing my technical skills, would love to work         
+						with a highly esteemed company as an intern it will give me a                   
+						platform to use my knowledge and skills for  mutual growth. I  
+						want to pursue a challenging career in a progressive environment 
+						where learning, innovation and creativity are encouraged, where 
+						my skills and  knowledge can be enhanced to their maximum 
+						potential.
+					</p>
+				</a>
+				</div>
+			</div>
+            <div class="c2">
+				<div>
+				<a name="Pd">
+					<p>
+						<h1 align=center>PERSONAL DETAILS</h1>
+						<pre>Contact No: +91-9548494791<br>Email: kirtikachaudhary1815@gmail.com<br>Permanent  Address: House no. 129, Village Kalalhati, Post Office Binpur, Tehsil Nakur, Distt. Saharanpur,247341 <br>Father’s Name: Mr.Ajit Singh<br>Mother’s Name: Mrs.Anjana<br>Date of Birth: 15-APR-2004<br>Age:18yrs.<br>Nationality: Indian<br>Marital Status: Single/Unmarried<br>Languages Known: Hindi, English</pre>
+					</p>
+				</a>
+				</div>
+			</div>
+			<div class="c3">
+				<div>
+				<a name=Eq>
+					<p>
+						<h1 align=center>EDUCATIONAL QUALIFICATION</h1>
+                        <h4 align=center>Bachelor of Technology</h4>
+                        Banasthali Vidyapith,Rajasthan<br>
+                        08/2020-Present (3rd Year, 6th Semester) CGPA:9.26<br>                                                
+                        Courses: Information Technology<br>
+                        <h4 align=center>Central Board Of Secondary Education</h4>
+                        Jawahar Vedic Public School,Muzaffarnagar<br>
+                        (2019-2020) Percentage:-91.6%<br>
+                        Subject opted: Physics , Chemistry , Mathematics , English , Physical Education<br>
+						<h4 align=center>Central Board Of Secondary Education</h4><br>
+                        Jawahar Vedic Public School,Muzaffarnagar<br>   
+                        (2017-2018) Percentage:-85.4%<br>
+                        Subject opted: English , Hindi , Social Science (History, Civics & Geography), Mathematics, Science (Physics , Chemistry , Biology) 
+					</p>
+				</a>
+				</div>
+			</div>
+			<!-- <div class="c8">
+				<div>
+				<a name=c>
+					<p>
+						<h1 align=center>CERTIFICATIONS</h1>
+                        <h4 align=center>Certificate Course in French Language</h4>
+                        Banasthali Vidyapith,Rajasthan<br>
+                        <b>Issued:</b> June, 2021 Percentage:86%<br>
+                        <h4 align=center>Diploma in Internet And Web Applications</h4>
+                        Banasthali Vidyapith,Rajasthan<br>
+                        <b>Issued:</b> October, 2022 Percentage:84.5%
+					</p>
+				</a>
+				</div>
+			</div> -->
+			<div class="c4">
+				<div>
+				<a name="cp">
+					<p>
+						<h1 align=center>Technical Skills</h1>
+						<ol>
+							<li>Microsoft Office:
+								<ul type=disc>
+									<li>Word</li>
+									<li>Power Point</li>
+								</ul>
+							</li>
+							<li>Presentations/Slideshows:
+								<ul type=disc>
+									<li>Power Point</li>
+								</ul>
+							</li>
+                            <li>Web Writing Skills:
+								<ul type=disc>
+									<li>WordPress</li>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+								</ul>
+							</li>
+							<li>Software Skills:
+								<ul type=disc>
+									<li>C</li>
+									<li>Java</li>
+									<li>C++</li>
+								</ul>
+							</li>
+							<li>Operating Systems:
+                                <ul type=disc>
+									<li>Microsoft Windows XP</li>
+									<li>Windows 7</li>
+                                    <li>Windows 10</li>
+								</ul>
+							</li>
+							<li>Database Management System (DBMS):
+								<ul type=disc>
+									<li>Intermediate knowledge about iSQLPlus</li>
+                                    <li>Worked with Oracle Server</li>
+                                    <li>Efficient in writing Intermediate SQL queries</li>
+								</ul>
+							</li>
+                            <li>Data Structures (Intermediate Level )</li>
+                            <li>Object Oriented Programming (Basic Level)</li>
+						</ol>
+					</p>
+				</a>
+				</div>
+			</div>
+			<div class="c5">
+				<div>
+				<a name="Ec">
+					<p>
+						<h1>EXTRA CURRICULAR ACTIVITIES</h1>
+						<ol>
+							<li>Swimming.</li>
+                            <li>Playing Volleyball and Badminton.</li>
+							<li>Drawing and Painting</li>
+							<li>To promote education among the under privileged society.</li>
+						</ol>
+						<h1>AREAS OF INTEREST</h1>
+						<ul type=disc>
+							<li>Major:
+								<ul type=circle>
+									<li>Programming</li>
+									<li>Problem Solving</li>
+								</ul>
+							</li>
+							<li>Minor:
+								<ul type=circle>
+									<li>Debating</li>
+								</ul>
+							</li>
+						</ul>
+					</p>
+				</a>
+				</div>
+			</div>
+			<div class="c6">
+				<div>
+				<a name="d">
+					<p>
+						<h1 align=center>DECLARATION</h1>
+                        I hereby declare that the above information is true and correct to
+                        the best of my knowledge and belief and that I will do my best for 
+                        the good of the organization.                                                            
+                        <pre>        Date: 09/02/2023                                   Place: Budhana, Uttar Pradesh.</pre>
+					</p>
+				</a>
+				</div>
+			</div>
+			<div class="c7">
+				<marquee width="60%" direction="right" height="100px">©Kirtika Chaudhary 2023-2025.</marquee>
+			</div>
+		</div>
+    </body>
+</html>

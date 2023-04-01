@@ -1,0 +1,78 @@
+<html>  
+  <head>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body {
+            background-color: #d8fe01;
+        }
+        #display{
+            font-family:cursive;
+            text-align: center;
+            color: #05574f;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            word-spacing: 0.4em;
+            font-size: 2em;
+            width: 15em;
+            height:5em;
+            background: linear-gradient(-240deg, #fbcd01 70%, #cf9c03 60%,#fd7701 50%);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            padding: 4.5em 1.3em;
+            border-radius: 50%;
+            box-shadow: 0 1.3em 1.8em rgba(94, 72, 181, 0.25);
+margin-bottom: 20%;
+        }
+h3{
+text-align: center;
+color: #6e055b;
+}
+    </style>
+  </head>
+  <body>
+<h3 id="txt"></h3>
+    <div id="display" onclick="hide()">
+
+    </div>  
+    <script>  
+        var welcome;  
+        var date = new Date();  
+        var hour = date.getHours();  
+        var minute = date.getMinutes();  
+        var second = date.getSeconds();  
+        if (minute < 10) 
+        {  
+            minute = "0" + minute;  
+        }  
+        if (second < 10) 
+        {  
+            second = "0" + second;  
+        }  
+        if (hour < 12) 
+        {  
+            welcome = "good morning";  
+        } 
+        else if (hour < 17) 
+        {  
+            welcome = "good afternoon";  
+        } 
+        else 
+        {  
+            welcome = "good evening";  
+        }  
+        document.getElementById('display').innerHTML="Wanna see your message";
+document.getElementById('txt').innerHTML=hour + ":" + minute + ":" + second;
+        // document.write("<br>" + hour + ":" + minute + ":" + second);   
+        function hide()
+        {
+            msg =window.prompt("What is your name");
+            document.getElementById('display').innerHTML=welcome+" "+msg;
+        }  
+    </script>  
+  </body>  
+</html> 

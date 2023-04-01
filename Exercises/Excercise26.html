@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing:border-box;
+background-color: black;
+            }
+            #display{
+            font-family:cursive;
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            word-spacing: 0.4em;
+            font-size: 2em;
+            width: 15em;
+            height:5em;
+            background: linear-gradient(-240deg, #616161 70%, #616161 70%);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            padding: 4.5em 1.3em;
+            border-radius: 50%;
+            box-shadow: 0 1.3em 1.8em white;
+margin-top: 6%;
+        }
+        #start{
+            background-color:rgb(72, 72, 73);  
+            color: black;  
+            padding: 16px 20px; 
+            margin-top:5%; 
+            margin-left:10%;  
+            border: none;  
+            cursor: pointer;  
+            width:20%;  
+            opacity: 0.9; 
+            font-size: 2rem; 
+box-shadow: 0 1.3em 1.8em white;
+        }
+        #stop{
+            background-color:rgb(72, 72, 73);  
+            color: black;  
+            padding: 16px 20px; 
+ margin-top:-5%;  
+            margin-left:70%;  
+            border: none;  
+            cursor: pointer;  
+            width:20%;  
+            opacity: 0.9; 
+            font-size: 2rem; 
+box-shadow: 0 1.3em 1.8em white;
+        }
+ #reset{
+            background-color:rgb(72, 72, 73);  
+            color: black;  
+            padding: 16px 20px; 
+ margin-top:-5%;  
+            margin-left:40%;  
+            border: none;  
+            cursor: pointer;  
+            width:20%;  
+            opacity: 0.9; 
+            font-size: 2rem; 
+box-shadow: 0 1.3em 1.8em white;
+        }
+button{
+font-family: cursive;
+}
+        button:hover{
+            transform:scale(1.2);
+            transition:1s;
+            color:rgb(155, 204, 242);
+        }
+
+        </style>
+    </head>
+    <body>
+        
+            <button id="start" onclick="x=setInterval(start,1000)">START</button>
+               <button id="stop" onclick="clearInterval(x)">STOP</button>
+         
+         <button id="reset" onclick=reset()>RESET</button>
+        <div id="display"></td> </div> 
+
+       
+        <script>
+            var count=0;
+            function clock()
+            {
+                document.getElementById('display').innerHTML=count;
+                count=count+1;
+            }
+ function start()
+            {
+                block=document.getElementById('display');
+                block.innerHTML=count;
+                count++;
+
+            }
+            function reset()
+            {
+                block=document.getElementById('display');
+count=0;
+                block.innerHTML=count;
+
+            }
+        </script>
+    </body>
+</html>
